@@ -14,10 +14,10 @@ import java.util.concurrent.CopyOnWriteArrayList;
 public class CustomerService {
 
     @Autowired
-    private CustomerDAO CustomerDAO;
+    private CustomerDAO customerDAO;
 
     private int customerIdCount = 1;
-    private List<Customer> customerList = new CopyOnWriteArrayList<>();
+    private List<Customer> CustomerList = new CopyOnWriteArrayList<>();
 
 
     //create customer

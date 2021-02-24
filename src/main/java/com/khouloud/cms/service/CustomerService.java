@@ -2,6 +2,7 @@ package com.khouloud.cms.service;
 
 import com.khouloud.cms.dao.CustomerDAO;
 import com.khouloud.cms.exception.CustomerNotFoundException;
+import com.khouloud.cms.exception.CustomerNotFoundException;
 import com.khouloud.cms.model.Customer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;

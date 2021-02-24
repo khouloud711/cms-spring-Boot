@@ -1,4 +1,4 @@
-package com.khouloud.cms.filter;
+/*package com.khouloud.cms.filter;
 
 import org.springframework.stereotype.Component;
 
@@ -13,4 +13,4 @@ public class MyNewFilter implements Filter {
         System.out.println("the new filter is called...");
         filterChain.doFilter(servletRequest, servletResponse);
     }
-}
+}*/

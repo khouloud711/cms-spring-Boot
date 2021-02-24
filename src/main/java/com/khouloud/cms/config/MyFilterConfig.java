@@ -1,5 +1,4 @@
-package com.khouloud.cms.config;
-
+/*package com.khouloud.cms.config;
 import com.khouloud.cms.filter.MyNewFilter;
 import org.springframework.boot.web.servlet.FilterRegistrationBean;
 import org.springframework.context.annotation.Bean;
@@ -19,3 +18,4 @@ public class MyFilterConfig {
         return registrationBean;
     }
 }
+*/

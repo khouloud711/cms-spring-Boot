@@ -14,12 +14,27 @@ public class Customer {
     @GeneratedValue(strategy = GenerationType.AUTO)
     @JsonProperty("id")
     private int customerId;
+
     @JsonProperty("firstName")
     private String customerFirstName;
+
     @JsonProperty("lastName")
     private String customerLastName;
+
     @JsonProperty("email")
     private String customerEmail;
+
+    public Customer(){
+
+    }
+
+    public Customer(String customerFirstName, String customerLastName, String customerEmail) {
+        this.customerFirstName = customerFirstName;
+        this.customerLastName = customerLastName;
+        this.customerEmail = customerEmail;
+    }
+
+
 
     public int getCustomerId() {
         return customerId;

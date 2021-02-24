@@ -1,4 +1,4 @@
-package com.khouloud.cms.filter;
+/*package com.khouloud.cms.filter;
 
 import org.springframework.core.annotation.Order;
 import org.springframework.stereotype.Component;
@@ -16,4 +16,4 @@ public class MyFilter_3 implements Filter{
         System.out.println("filter 3 is called...");
         filterChain.doFilter(servletRequest, servletResponse);
     }
-}
+}*/

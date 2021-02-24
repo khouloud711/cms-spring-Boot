@@ -1,4 +1,4 @@
-package com.khouloud.cms.config;
+/*package com.khouloud.cms.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -22,17 +22,17 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         User.UserBuilder userBuilder = User.builder().passwordEncoder(encoder::encode);
 
         UserDetails user1 = userBuilder
-                .username("myuser1")
-                .password("password1")
+                .username("user1")
+                .password("user1")
                 .roles("USER")
                 .build();
 
         UserDetails user2 = userBuilder
-                .username("myuser2")
-                .password("password2")
+                .username("user2")
+                .password("user2")
                 .roles("USER", "ADMIN")
                 .build();
 
         return new InMemoryUserDetailsManager(user1, user2);
     }
-}
+}*/

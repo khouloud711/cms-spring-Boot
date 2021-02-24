@@ -19,16 +19,20 @@ public class CustomerService {
     private int customerIdCount = 1;
     private List<Customer> customerList = new CopyOnWriteArrayList<>();
 
+
+    //create customer
     public Customer addCustomer(Customer customer) {
 
         return customerDAO.save(customer);
     }
 
+    //get all customers
     public List<Customer> getCustomers() {
 
         return customerDAO.findAll();
     }
 
+    //get customer by id
     public Customer getCustomer(int customerId) {
 
         Optional<Customer> optionalCustomer = customerDAO.findById(customerId);
@@ -39,6 +43,7 @@ public class CustomerService {
         return optionalCustomer.get();
     }
 
+    //update customer
     public Customer updateCustomer(int customerId, Customer customer) {
 
         customer.setCustomerId(customerId);
@@ -46,6 +51,7 @@ public class CustomerService {
         return customerDAO.save(customer);
     }
 
+    //delete customer
     public void deleteCustomer(int customerId) {
 
         customerDAO.deleteById(customerId);

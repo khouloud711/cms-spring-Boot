@@ -2,7 +2,6 @@ package com.khouloud.cms.service;
 
 import com.khouloud.cms.dao.CustomerDAO;
 import com.khouloud.cms.exception.CustomerNotFoundException;
-import com.khouloud.cms.exception.CustomerNotFoundException;
 import com.khouloud.cms.model.Customer;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
@@ -18,9 +17,7 @@ public class CustomerService {
     private CustomerDAO customerDAO;
 
     private int customerIdCount = 1;
-    private List<Customer> CustomerList = new CopyOnWriteArrayList<>();
-
-
+    private List<Customer> customerList = new CopyOnWriteArrayList<>();
 
 
     //create customer
